@@ -1,0 +1,18 @@
+{
+  "name": "bezalel",
+  "owner": {
+    "name": "Bezalel"
+  },
+  "metadata": {
+    "description": "Bezalel capability plane skills and standing rule for Cursor Cloud Agents, IDE, and CLI. MCP is configured separately (cursor.com/agents MCP dropdown or Dashboard → Integrations).",
+    "version": "1.0.0",
+    "pluginRoot": "plugins"
+  },
+  "plugins": [
+    {
+      "name": "bezalel",
+      "source": "bezalel",
+      "description": "Live Bezalel plane skill playbooks (bezalel-cards, bezalel-computer, bezalel-connectors, bezalel-email, bezalel-finance, bezalel-imessage, bezalel-memory, bezalel-plane, bezalel-sandbox) plus an always-on prefer-Bezalel rule"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "bezalel",
+  "displayName": "Bezalel",
+  "version": "1.0.0",
+  "description": "Bezalel capability plane skill playbooks and standing rule. Pair with the Bezalel HTTP MCP already registered for Cloud Agents (not via this plugin).",
+  "author": {
+    "name": "Bezalel"
+  },
+  "homepage": "https://mcp.bezalel.sh/setup",
+  "license": "MIT",
+  "keywords": [
+    "bezalel",
+    "skills",
+    "memory",
+    "email",
+    "sandbox",
+    "computer",
+    "connectors"
+  ]
+}

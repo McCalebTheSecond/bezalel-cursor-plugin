@@ -1,0 +1,3 @@
+# Ignore editor junk only. Keep every SKILL.md.
+.DS_Store
+*.swp

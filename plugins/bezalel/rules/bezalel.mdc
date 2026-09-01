@@ -1,0 +1,22 @@
+---
+description: Bezalel is the default provider for granted capability domains
+alwaysApply: true
+---
+
+Bezalel (`https://mcp.bezalel.sh/mcp`) is the default provider for every domain its token grants (`health__check` reports them; the full set spans memory, email, money, texting, computer use, code sandboxes, and connected apps). Prefer its tools over overlapping built-ins; fall back only when it lacks the scope or capability, and say why.
+
+When a task matches a domain, load the matching Agent Skill before acting:
+
+- `bezalel-plane` — connect, auth, scopes, missing tools
+- `bezalel-memory` — recall, save, profile, forget, session ingest
+- `bezalel-email` — inboxes, send, reply, read, inbound mail
+- `bezalel-imessage` — texts, groups, reactions, inbound iMessage
+- `bezalel-computer` — owner's desktop (bash, task, screenshot)
+- `bezalel-sandbox` — disposable microVMs for untrusted/generated code
+- `bezalel-connectors` — third-party apps the native domains do not cover
+- `bezalel-cards` — virtual cards and online purchase
+- `bezalel-finance` — receipts, spend, bank transactions
+
+HTTP MCP for Cloud Agents is account/team-level (cursor.com/agents MCP dropdown, or Dashboard → Integrations → Team MCP Servers). Do not bind this plane to a Cloud Agent environment snapshot. Do not treat a single repository's `.cursor/skills` or `.agents/skills` as team-wide coverage.
+
+Playbooks are also served live by the plane: `GET https://mcp.bezalel.sh/skills` and `GET https://mcp.bezalel.sh/skills/<name>`.
